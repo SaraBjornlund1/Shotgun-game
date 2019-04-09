@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="CatFight.css" rel="stylesheet" />
+    <script src="Game.js" defer></script>
+    <title>CatFight the game!</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Choose your move!</h1>
+            <h5> When you have 3 bowl's of food, Press the final blow to win!</h5>
+            <h6>Otherwise.. Good luck!</h6>
+        </div>
+    </header>
+    <div>
+        <div class="container">
+            <button class="buttons disabled" id="scratch">Scratch!</button>
+
+            <button class="buttons" id="block">Block!</button>
+
+            <button class="buttons" id="load">Fill up!</button>
+
+            <button class="buttons hide" id="shotgun">Fire!</button>
+        </div>
+
+        <div class="container">
+            <img class="img" id="playerCat" src="PlayerWin.png">
+
+            <img class="img" id="npcCat" src="NpcWin.png">
+        </div>
+
+        <div class="center">
+            <div id="padding">
+                <h4>Your Shots!</h4>
+                <img class="img2" src="Shots.png">
+                <h3 class="center2" id="playerAmmo">0</h3>
+            </div>
+
+            <div id="padding2">
+                <h4>Enemy Shots!</h4>
+                <img class="img2" src="Shots.png">
+                <h3 class="center2" id="npcAmmo">0</h3>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
